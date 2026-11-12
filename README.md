@@ -13,9 +13,9 @@ lab4/
 │   └── dining_philosophers.c       # Tarea 3 en C
 ├── go/
 │   ├── go.mod
-│   ├── queue/queue.go
-│   ├── producer_consumer/producer_consumer.go
-│   └── dining_philosophers/dining_philosophers.go
+│   ├── queue.go                     # Tarea 1 en Go
+│   ├── producer_consumer.go         # Tarea 2 en Go
+│   └── dining_philosophers.go       # Tarea 3 en Go
 └── README.md
 ```
 
@@ -43,7 +43,7 @@ gcc -Wall -Wextra -pthread queue.c -o queue
 **Ejecutar (Go):**
 
 ```bash
-cd go && go run ./queue
+cd go && go run queue.go
 ```
 
 **Salida de ejemplo:**
@@ -81,7 +81,7 @@ gcc -Wall -Wextra -pthread producer_consumer.c -o producer_consumer
 **Ejecutar (Go):**
 
 ```bash
-cd go && go run ./producer_consumer
+cd go && go run producer_consumer.go
 ```
 
 En Go el buffer acotado se implementa con un **canal con capacidad**
@@ -124,7 +124,7 @@ gcc -Wall -Wextra -pthread dining_philosophers.c -o dining_philosophers
 **Ejecutar (Go):**
 
 ```bash
-cd go && go run ./dining_philosophers
+cd go && go run dining_philosophers.go
 ```
 
 **Salida de ejemplo:**
