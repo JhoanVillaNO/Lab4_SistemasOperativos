@@ -7,9 +7,10 @@ Implementación de los tres mecanismos de sincronización del laboratorio en
 
 ```
 lab4/
-├── queue.c                     # Tarea 1 en C
-├── producer_consumer.c         # Tarea 2 en C
-├── dining_philosophers.c       # Tarea 3 en C
+├── c/
+│   ├── queue.c                     # Tarea 1 en C
+│   ├── producer_consumer.c         # Tarea 2 en C
+│   └── dining_philosophers.c       # Tarea 3 en C
 ├── go/
 │   ├── go.mod
 │   ├── queue/queue.go
@@ -34,6 +35,7 @@ señalizaciones perdidas (spurious wakeups).
 **Compilar y ejecutar (C):**
 
 ```bash
+cd c
 gcc -Wall -Wextra -pthread queue.c -o queue
 ./queue
 ```
@@ -71,6 +73,7 @@ Así nunca hay overflow ni underflow del buffer.
 **Compilar y ejecutar (C):**
 
 ```bash
+cd c
 gcc -Wall -Wextra -pthread producer_consumer.c -o producer_consumer
 ./producer_consumer
 ```
@@ -113,6 +116,7 @@ Cada tenedor es un `pthread_mutex_t` (C) / `sync.Mutex` (Go); la sala es un
 **Compilar y ejecutar (C):**
 
 ```bash
+cd c
 gcc -Wall -Wextra -pthread dining_philosophers.c -o dining_philosophers
 ./dining_philosophers
 ```
