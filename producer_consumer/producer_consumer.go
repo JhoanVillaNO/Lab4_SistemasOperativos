@@ -1,10 +1,4 @@
-// Tarea 2 (Go): Problema productor-consumidor con buffer acotado.
-//
-// Un canal con capacidad actua como buffer acotado:
-//   - Enviar bloquea cuando esta lleno  -> sem empty (espacios).
-//   - Recibir bloquea cuando esta vacio -> sem full (ocupados).
-//
-// Ejecutar: go run ./producer_consumer
+// Tarea 2 (Go): productor-consumidor con buffer acotado (canal con capacidad)
 package main
 
 import (

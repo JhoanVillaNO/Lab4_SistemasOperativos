@@ -1,6 +1,4 @@
-// Tarea 1 (Go): Cola segura para hilos usando sync.Mutex y sync.Cond.
-//
-// Ejecutar: go run ./queue
+// Tarea 1 (Go): cola segura para hilos con sync.Mutex y sync.Cond
 package main
 
 import (

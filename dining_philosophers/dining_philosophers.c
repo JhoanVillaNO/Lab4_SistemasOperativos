@@ -1,14 +1,4 @@
-/*
- * Tarea 3: El problema de los filosofos cenando.
- *
- * Solucion: semaforo "sala" que limita a N-1 filosofos simultaneos
- * intentando comer. Como a lo sumo N-1 filosofos compiten por N tenedores,
- * siempre queda al menos un tenedor libre -> no hay deadlock.
- * Ademas cada filosofo toma sus tenedores en orden consistente.
- *
- * Compilar: gcc -Wall -Wextra -pthread dining_philosophers.c -o dining_philosophers
- * Ejecutar:  ./dining_philosophers
- */
+// Tarea 3: filosofos cenando, solucion libre de deadlock con semaforo sala
 
 #include <pthread.h>
 #include <semaphore.h>

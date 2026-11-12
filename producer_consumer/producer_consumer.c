@@ -1,9 +1,4 @@
-/*
- * Tarea 2: Solucion del problema productor-consumidor usando semaforos.
- *
- * Compilar: gcc -Wall -Wextra -pthread producer_consumer.c -o producer_consumer
- * Ejecutar:  ./producer_consumer
- */
+// Tarea 2: productor-consumidor con buffer acotado usando semaforos
 
 #include <pthread.h>
 #include <semaphore.h>

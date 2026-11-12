@@ -1,10 +1,4 @@
-// Tarea 3 (Go): El problema de los filosofos cenando.
-//
-// Solucion: canal "sala" con capacidad N-1 que limita a N-1 filosofos
-// simultaneos intentando comer -> siempre queda un tenedor libre, no hay
-// deadlock. Cada filosofo toma sus tenedores en orden consistente.
-//
-// Ejecutar: go run ./dining_philosophers
+// Tarea 3 (Go): filosofos cenando, solucion libre de deadlock con canal sala
 package main
 
 import (

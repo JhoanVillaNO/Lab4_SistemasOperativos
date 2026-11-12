@@ -1,10 +1,4 @@
-/*
- * Tarea 1: Implementacion de una cola segura para hilos usando
- * locks y variables de condicion.
- *
- * Compilar: gcc -Wall -Wextra -pthread queue.c -o queue
- * Ejecutar:  ./queue
- */
+// Tarea 1: cola segura para hilos con mutex y variables de condicion
 
 #include <pthread.h>
 #include <stdio.h>
